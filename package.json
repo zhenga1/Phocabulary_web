@@ -1,9 +1,14 @@
 {
+  "homepage": "https://github.com/zhenga1/Phocabulary_web",
   "name": "webserver",
   "version": "1.0.0",
   "description": "This is the Official backend webserver for our application",
   "main": "app.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Aaron Zheng",
@@ -17,6 +22,11 @@
     "mongoose": "^6.4.4",
     "morgan": "^1.10.0",
     "passport": "^0.6.0",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "react": "^18.2.0",
+    "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
