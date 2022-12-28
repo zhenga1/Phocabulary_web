@@ -5,7 +5,7 @@
   "description": "This is the Official backend webserver for our application",
   "main": "app.js",
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && nodemon app",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
